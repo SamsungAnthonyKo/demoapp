@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* To builds the dockerimage */
         //update your ECR registry URI
-        app = docker.build("https://676082793719.dkr.ecr.ap-northeast-2.amazonaws.com/myregi")
+        app = docker.build("https://676082793719.dkr.ecr.ap-northeast-2.amazonaws.com/myregi/demoapp")
     }
 
     stage('Test image') {
